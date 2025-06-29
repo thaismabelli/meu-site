@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho com menu de navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main>
+        <h1>Contato</h1>
+        <div class="info-contato">
+        </div>
+        <!-- Formulário de contato 
+         Criação em formato de input como solicitado no trabalho *Link para contato – fazer a parte visual do formulário. (utilizar inputs:
+        nome, email, mensagem)* -->
+        <form id="contato-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <!-- Rodapé com direitos autorais -->
+    <footer>
+        <p>&copy; 2025 Thais Mabelli -  Todos os direitos reservados.</p>
+    </footer>
+    <!-- Importa o arquivo JavaScript principal -->
+    <script src="js/main.js"></script>
+</body>
+</html>

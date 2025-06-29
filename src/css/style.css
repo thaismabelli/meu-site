@@ -1,0 +1,191 @@
+/* Define variáveis de cores para o tema rosa */
+:root {
+    --rosa-claro: #ffe4ec;
+    --rosa-medio: #ff69b4;
+    --rosa-escuro: #d72660;
+    --rosa-hover: #ff1493;
+    --branco: #fff;
+    --cinza: #f7f7f7;
+}
+
+/* Remove margens e paddings padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o corpo da página */
+body {
+    background-color: var(--rosa-claro);
+    color: var(--rosa-escuro);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding-bottom: 70px; /* espaço para o rodapé fixo */
+}
+
+/* Cabeçalho e navegação */
+header {
+    background: var(--rosa-medio);
+    box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding: 16px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: var(--rosa-hover);
+}
+
+/* Conteúdo principal */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    background: var(--branco);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(255, 105, 180, 0.10);
+    padding: 32px 28px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--rosa-escuro);
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 24px;
+}
+
+/* Listas e seções */
+ul, ol {
+    margin-left: 24px;
+    margin-bottom: 18px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+/* Formulários */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--rosa-escuro);
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1.5px solid var(--rosa-medio);
+    border-radius: 5px;
+    background: var(--cinza);
+    color: var(--rosa-escuro);
+    font-size: 1em;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--rosa-hover);
+    outline: none;
+}
+
+button {
+    background: var(--rosa-medio);
+    color: var(--branco);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: var(--rosa-hover);
+}
+
+/* Rodapé fixo */
+footer {
+    background: var(--rosa-medio);
+    color: var(--branco);
+    text-align: center;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 8px rgba(255, 105, 180, 0.08);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+    main {
+        max-width: 98vw;
+        padding: 18px 6vw;
+    }
+    nav ul {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px 2vw;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    footer {
+        font-size: 0.95em;
+        padding: 12px 0;
+    }
+}
